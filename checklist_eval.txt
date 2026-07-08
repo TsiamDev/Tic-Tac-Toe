@@ -1,0 +1,45 @@
+Checklist Evaluation
+====================
+
+Evaluated diagrams:
+- system_context_diagram.md
+- container_diagram.md
+- component_diagram.md
+- code_diagram.md
+
+Legend:
+- Yes = satisfied
+- No = not satisfied
+- N/A = not applicable
+
+| Checklist question | System Context | Container | Component | Code |
+|---|---:|---:|---:|---:|
+| Does the diagram have a title? | Yes | Yes | Yes | Yes |
+| Do you understand what the diagram type is? | Yes | Yes | Yes | Yes |
+| Do you understand what the diagram scope is? | Yes | Yes | Yes | Yes |
+| Does the diagram have a key/legend? | No | No | No | No |
+| Does every element have a name? | Yes | Yes | Yes | Yes |
+| Do you understand the type of every element? | Yes | Yes | Yes | Yes |
+| Do you understand what every element does? | Yes | Yes | Yes | Yes |
+| Where applicable, do you understand the technology choices associated with every element? | N/A | Yes | Yes | No |
+| Do you understand the meaning of all acronyms and abbreviations used in elements? | Yes | Yes | Yes | Yes |
+| Do you understand the meaning of all colours used? | N/A | N/A | N/A | N/A |
+| Do you understand the meaning of all shapes used? | Yes | Yes | Yes | Yes |
+| Do you understand the meaning of all icons used? | N/A | N/A | N/A | N/A |
+| Do you understand the meaning of all border styles used? | Yes | Yes | Yes | Yes |
+| Do you understand the meaning of all element sizes used? | N/A | N/A | N/A | N/A |
+| Does every arrow have a label describing the intent of that relationship? | Yes | Yes | Yes | No |
+| Does the description match the relationship direction? | Yes | Yes | Mostly Yes | Yes |
+| Where applicable, do you understand the technology choices associated with every relationship? | N/A | N/A | N/A | N/A |
+| Do you understand the meaning of all acronyms and abbreviations used in relationships? | Yes | Yes | Yes | Yes |
+| Do you understand the meaning of all colours used in relationships? | N/A | N/A | N/A | N/A |
+| Do you understand the meaning of all arrow heads used? | Yes | Yes | Yes | Yes |
+| Do you understand the meaning of all line styles used? | Yes | Yes | Yes | Yes |
+
+Main Remaining Issues
+---------------------
+
+- All four diagrams lack an explicit key/legend.
+- The code diagram has unlabeled relationships, such as composition arrows like `GameEngine *-- GameLoopController`.
+- The code diagram does not state the implementation technology choices.
+- In the component diagram, `Rel(moveValidator, gameStateManager, "Responds whether move is valid")` is directionally confusing.
